@@ -15,18 +15,6 @@ Then add the plugin to your `tailwind.config.js` file:
 module.exports = {
   theme: {
     // ...
-    // Optional. Your plugin might not have any options at all.
-    proRataRem: {
-      // ...
-      YOUR_PLUGIN_CUSTOM_OPTION: true,
-      // ...
-    },
-  },
-  variants: {
-    // ...
-    // Optional. Your plugin might not have any variants at all.
-    proRataRem: ['responsive'],
-    // ...
   },
   plugins: [
     // ...
@@ -36,7 +24,7 @@ module.exports = {
 };
 ```
 
-This plugin will generate following CSS:
+This plugin will generate following CSS classes, apply one to your root element (html):
 
 ```css
 /* Responsive Root element proportional to 6px */
@@ -47,12 +35,12 @@ This plugin will generate following CSS:
 
 /* Responsive Root element proportional to 4px */
 .pro-rata-rem--inclusive {
-  background-color: red;
+  ...
 }
 
 /* Responsive Root element proportional to 3px */
 .pro-rata-rem--critical {
-  display: block;
+  ...
 }
 ```
 
